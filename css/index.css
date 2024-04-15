@@ -69,7 +69,7 @@ header{
     width: 25px;
 }
 .bg{
-    background: rgba(79, 186, 228, 0.5) url(../pictures/bg.jpg);
+    background: rgba(111, 74, 170, 0.6) url(../pictures/bg.jpg);
     background-size: cover;
-    background-blend-mode: lighten;
+    background-blend-mode: hue;
 }

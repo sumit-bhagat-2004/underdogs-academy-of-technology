@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AOT Resources</title>
     <link rel="icon" href="./pictures/favicon.ico">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
         <h1>Academy of Technology|Resources</h1>
     </header>
+    <nav class="navbar bg">
+        <ul class="navlist">
+            <li><a href="index.html"><i class="material-icons">home</i></a></li>
+            <li class="dropdown">
+                <a href="http://182.74.215.202:8001/" class="">Library</a>
+            </li>
+            <li class="dropdown">
+                <a href="http://182.74.215.198/moodle/" class="">Moodle</a>
+                <div class="dropdown-content">
+                    <a href="http://182.74.215.198/moodle/login/index.php">Login</a>
+                    <a href="http://182.74.215.198/moodle/course/index.php">Courses</a>
+                </div>
+            </li>
+            
+        </ul>
+        <div class="navbar-right">
+            <input type="text" name="search" id="search" placeholder="Search">
+            <button class="btn"><img src="./pictures/search.png" alt="Search" class="search"></button>
+        </div>
+    </nav>
     <main>
         <a href="http://182.74.215.202:8001/" class=""><h2>Library</h2></a>
         <a href="http://182.74.215.198/moodle/" class=""><h2>Moodle</h2></a>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 *{
     margin:0;
     padding:0;
@@ -21,7 +22,7 @@ header{
     list-style-type: none;
     display:flex ;
     /*background-color: yellowgreen;*/
-    width: 50%;
+    width: 70%;
     overflow: auto;
     justify-content: center;
     align-items: center;
@@ -29,7 +30,6 @@ header{
 
 .navlist li{
     border-right: thin solid white;
-    border-left: thin solid white;
     border-collapse: collapse;
     float: left;
 }
@@ -45,7 +45,7 @@ header{
     border-right: none;
 }
 .navlist li a:hover{
-    background-color: blue;
+    background-color:white;
     color: black;
 }
 .navbar-right{
@@ -53,7 +53,7 @@ header{
     align-items: center;
     justify-content: right;
     float: right;
-    width: 50%;
+    width: 30%;
     text-align:right;
     /*background-color: blue;*/
 }
@@ -74,7 +74,7 @@ header{
     width: 25px;
 }
 .bg{
-    background: rgba(85, 138, 235, 0.6) url(../pictures/bg.jpg);
+    background: rgba(226, 31, 57, 1);
     background-size: cover;
     background-blend-mode: lighten;
 }
@@ -97,14 +97,28 @@ header{
     flex-direction: column;
 }
 
-  .gallery{
+.front{
+    background: rgba(255,0,0, 0.7) url(../pictures/aotfront.jpg);
+    background-size: cover;
     width: 100%;
-    height:auto;
+    background-attachment: fixed;
+}
+.welcome{
     display: flex;
     justify-content: center;
-  }
-.gallery img{
-
-    width: 50%;
-    margin: 0 10%;
+    align-items: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    text-align: center;
+    padding: 210px 0;
+    flex-direction: column;
+}
+.welcome a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
 }

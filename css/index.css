@@ -11,7 +11,7 @@ header{
 .logo{
     /*background-color: brown;*/
 }
-.navbar{
+.navbar{    
     display: flex;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -107,7 +107,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: red;
     font-family: 'Times New Roman', Times, serif;
     font-size: 90px;
     text-align: center;

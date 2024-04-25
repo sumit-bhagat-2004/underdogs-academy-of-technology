@@ -2,11 +2,10 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    list-style: none;
 }
 header{
     display: flex;
+    /*background-color: aqua;*/
     justify-content: center;
 }
 .logo{
@@ -18,8 +17,10 @@ header{
     border-color: yellow;
     border-radius: 15px;
     width: 100%;
+    
 }
 .logo img{
+    /*background-color: brown;*/
     height: 8vh;
 }
 .logo-written{
@@ -32,87 +33,140 @@ header{
 }
 .navbar{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #e32525;
-    overflow: hidden;
-}
-.navbar .nav-list{
-    display: flex;
-    text-align: center;
-}
-.navbar .nav-list li{
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding: 0.4rem 0.7rem;
-    color: #d8d3d3;
-}
-.navbar .nav-list li:hover{
-    cursor: pointer;
-    background: #2c2c2c;
-    color: #e32525;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     
-    .sub-nav-list{
-        display: block;
-        position: absolute;
-        background: #e32525;
-        top: 6.4rem;
-    }
 }
-.sub-nav-list{
-    display: none;
+.navlist{
+    list-style-type: none;
+    display:flex ;
+    /*background-color: yellowgreen;*/
+    width: 70%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
 }
-.sub-nav-list li a{
-    color: #d8d3d3;
+
+.navlist li{
+    border-right: thin solid white;
+    border-collapse: collapse;
+    float: left;
+}
+.navlist li a{
     text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    float:left;
+    
 }
-.sub-nav-list li a:hover{
-        color: #e32525;
+.navlist li:last-child{
+    border-right: none;
 }
-.nav-right input{
-    width: 10rem;
-    border: none;
-    height: 1.2rem;
+.navlist li a:hover{
+    background-color: red;
+    color: white;
 }
-.nav-right i{
-    font-size: 1.2rem;
-    margin: 0 0.7rem;
-}
-#home{
-    height: 100vh;
-    width: 100%;
-    background: url(../pictures/aotfront.jpg) #2c2c2c;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
+.navbar-right{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    float: right;
+    width: 30%;
+    text-align:right;
+    /*background-color: blue;*/
 }
-#home .container{
-    text-align: center;
+#search{
+    border: 3px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
 }
-#home .container h1{
-    font-size: 5rem;
-    color: #d8d3d3;
-    text-transform: uppercase;
-    padding: 1rem 0;
-}
-#home .container .home-btn{
-    padding: 1rem;
-    border-radius: 2rem;
-    background: #e32525;
-    border:2px solid #e32525;
-    transition: all 0.3s ease-in-out;
-}
-#home .container .home-btn:hover{
-    box-shadow: 0 0 0.5rem #e32525;
+.btn {
+    border: solid skyblue;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
     cursor: pointer;
 }
-#home .container .home-btn a{
+.search{
+    width: 25px;
+}
+.bg{
+    background: rgba(226, 31, 57, 1);
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: none;
+    min-width: 130px;
+}
+.dropdown-content a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid aquamarine;
+    border-collapse: collapse;
+}
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown a:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.front{
+    background: rgba(255,0,0, 0.7) url(../pictures/aotfront.jpg);
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    text-align: center;
+    padding: 195px 0;
+    flex-direction: column;
+}
+.welcome a{
     text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #d8d3d3;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+}
+
+.dropdown-content ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dropdown-content-2{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    background-color: grey;
+    min-width: 130px;
+}
+.dropdown-content-2 a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+.dropdown-2:hover .dropdown-content-2{
+    display: flex;
+    flex-direction: column;
 }

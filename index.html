@@ -7,77 +7,97 @@
     <title>Academy of Technology</title>
     <link rel="icon" href="./pictures/favicon.ico">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <header >
-            <div class="logo">
-                <img src="./pictures/aot-logo (1).jpg" alt="logo" class="banner-logo">
-                <div class="logo-written">
-                    <h1 >ACADEMY OF TECHNOLOGY</h1>
-                    <pre >                          .......translating vision into future</pre>
-                </div>
+<header >
+        <div class="logo">
+            <img src="./pictures/aot-logo (1).jpg" alt="logo" class="banner-logo">
+            <div class="logo-written">
+                <h1 >ACADEMY OF TECHNOLOGY</h1>
+                <pre >                          .......translating vision into future</pre>
             </div>
-    </header>
-    <nav class="navbar">
-        <div class="nav-left">
-            <ul class="nav-list">
-                <li>academics
-                    <ul class="sub-nav-list">
-                        <li><a href="">department</a></li>
-                        <li>programs
+        </div>
+</header>
+<nav class="navbar bg">
+    <ul class="navlist">
+        <li><a href="index.html" title="Home"><i class="material-icons">home</i></a></li>
+        <li class="dropdown">
+            <a href="academics.html">Academics</a>
+            <div class="dropdown-content">
+                    <ul>
+                        <li class="dropdown-2">
+                            <a href="#">Department </a>
+                            <div class="dropdown-content-2">
+                                <a href="./departments/csbs.html">CSBS</a>
+                                <a href="./departments/cse.html">CSE</a>
+                                <a href="./departments/ece.html">ECE</a>
+                                <a href="./departments/ee.html">EE</a>
+                                <a href="./departments/eee.html">EEE</a>
+                                <a href="./departments/me.html">ME</a>
+                                <a href="./departments/mca.html">MCA</a>
+                            </div>
                         </li>
                     </ul>
-                </li>
-                <li>resources
-                    <ul class="sub-nav-list">
-                        <li><a href="">Library</a></li>
-                        <li><a href="">Moodle</a></li>
-                    </ul>
-                </li>
-                <li>admissions
-                    <ul class="sub-nav-list">
-                        <li><a href="">UG Admission</a></li>
-                        <li><a href="">PG Admission</a></li>
-                    </ul>
-                </li>
-                <li>research facilities
-                    <ul class="sub-nav-list">
-                        <li><a href="">Current Research</a></li>
-                        <li><a href="">Past Research</a></li>
-                        <li><a href="">Research Facilities</a></li>
-                    </ul>
-                </li>
-                <li>students
-                    <ul class="sub-nav-list">
-                        <li><a href="">Life @AOT</a></li>
-                        <li><a href="">Campus Facilities</a></li>
-                        <li><a href="">Career Services</a></li>
-                        <li><a href="">Events</a></li>
-                    </ul>
-                </li>
-                <li>faculty
-                    <ul class="sub-nav-list">
-                        <li><a href="">Faculty List</a></li>
-                        <li><a href="">Faculty Positions</a></li>
-                        <li><a href="">Career Benefits @AOT</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <input type="search">  
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-    </nav>
+                    <a href="programs.html">Program</a>
+            </div>
+        </li>
+        <li class="dropdown">
 
-    <section id="home">
-        <div class="container">
-            <h1>welcome to aot</h1>
-            <button class="home-btn"><a href="about.html">know more</a></button>
-        </div>
-    </section>
+            <a href="academics.html">Admission</a>
+            <div class="dropdown-content">
+                    <a href="#">Department </a>
+                    <a href="programs.html">Program</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="academics.html">Student</a>
+            <div class="dropdown-content">
+                    <a href="#">Department </a>
+                    <a href="programs.html">Program</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="academics.html">Faculty</a>
+            <div class="dropdown-content">
+                    <a href="#">Department </a>
+                    <a href="programs.html">Program</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="research.html">Research</a>
+            <div class="dropdown-content">
+                <a href="#">Research</a>
+                <a href="#">Facilities</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="resources.html">Resources</a>
+            <div class="dropdown-content">
+                <a href="http://182.74.215.202:8001/">Library</a>
+                <a href="http://182.74.215.198/moodle/">Moodle</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="academics.html">About</a>
+            <div class="dropdown-content">
+                    <a href="#">Department </a>
+                    <a href="programs.html">Program</a>
+            </div>
+        </li>
+    </ul>
+    <div class="navbar-right">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <button class="btn"><img src="./pictures/search.png" alt="Search" class="search"></button>
+    </div>
+</nav>
+<section class="front">
+    <p class="welcome">
+        WELCOME TO AOT
+        <a href="about.html" >Know More</a>
+    </p>
+    
+</section>
 <body>
 </body>
 </html>

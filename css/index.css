@@ -2,6 +2,8 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    list-style: none;
 }
 header{
     display: flex;
@@ -28,9 +30,8 @@ header{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(19, 11, 122);
 }
-.navbar{
+/* .navbar{
     display: flex;
-    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     
@@ -38,7 +39,6 @@ header{
 .navlist{
     list-style-type: none;
     display:flex ;
-    /*background-color: yellowgreen;*/
     width: 70%;
     overflow: auto;
     justify-content: center;
@@ -72,7 +72,6 @@ header{
     float: right;
     width: 30%;
     text-align:right;
-    /*background-color: blue;*/
 }
 #search{
     border: 3px solid black;
@@ -137,11 +136,59 @@ header{
 .dropdown-2:hover .dropdown-content-2{
     display: flex;
     flex-direction: column;
+} */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e32525;
+    overflow: hidden;
+}
+.navbar .nav-list{
+    display: flex;
+    text-align: center;
+}
+.navbar .nav-list li{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    color: #d8d3d3;
+}
+.navbar .nav-list li:hover{
+    cursor: pointer;
+    background: #2c2c2c;
+    color: #e32525;
+    
+    .sub-nav-list{
+        display: block;
+        position: absolute;
+        background: #e32525;
+        top: 6.4rem;
+    }
+}
+.sub-nav-list{
+    display: none;
+}
+.sub-nav-list li a{
+    color: #d8d3d3;
+    text-decoration: none;
+}
+.sub-nav-list li a:hover{
+        color: #e32525;
+}
+.nav-right input{
+    width: 10rem;
+    border: none;
+    height: 1.2rem;
+}
+.nav-right i{
+    font-size: 1.2rem;
+    margin: 0 0.7rem;
 }
 #home{
     height: 100vh;
     width: 100%;
-    background: url(../pictures/aotfront.jpg) #191919;
+    background: url(../pictures/aotfront.jpg) #2c2c2c;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -5,7 +5,6 @@
 }
 header{
     display: flex;
-    /*background-color: aqua;*/
     justify-content: center;
 }
 .logo{
@@ -17,10 +16,8 @@ header{
     border-color: yellow;
     border-radius: 15px;
     width: 100%;
-    
 }
 .logo img{
-    /*background-color: brown;*/
     height: 8vh;
 }
 .logo-written{
@@ -118,41 +115,12 @@ header{
     display: flex;
     flex-direction: column;
 }
-
-.front{
-    background: rgba(255,0,0, 0.7) url(../pictures/aotfront.jpg);
-    background-size: cover;
-    width: 100%;
-    background-attachment: fixed;
-}
-.welcome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 90px;
-    text-align: center;
-    padding: 195px 0;
-    flex-direction: column;
-}
-.welcome a{
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    color: white;
-    background-color: red;
-    padding: 5px 10px;
-}
-
 .dropdown-content ul{
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 .dropdown-content-2{
     display: none;
     position: absolute;
@@ -169,4 +137,42 @@ header{
 .dropdown-2:hover .dropdown-content-2{
     display: flex;
     flex-direction: column;
+}
+#home{
+    height: 100vh;
+    width: 100%;
+    background: url(../pictures/aotfront.jpg) #191919;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .container{
+    text-align: center;
+}
+#home .container h1{
+    font-size: 5rem;
+    color: #d8d3d3;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+#home .container .home-btn{
+    padding: 1rem;
+    border-radius: 2rem;
+    background: #e32525;
+    border:2px solid #e32525;
+    transition: all 0.3s ease-in-out;
+}
+#home .container .home-btn:hover{
+    box-shadow: 0 0 0.5rem #e32525;
+    cursor: pointer;
+}
+#home .container .home-btn a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #d8d3d3;
 }
